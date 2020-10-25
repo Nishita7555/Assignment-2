@@ -18,14 +18,14 @@
     a.map { |n| n * n}.sort
   end
 
-  def unique_total(a)
-    # ADD YOUR CODE HERE
-    hash = Hash.new(0)
-    a.each{|key| hash[key] += 1}
-    sum = 0
-    hash.each{|x,y| sum+=x if y==1}
-    return sum
-  end
+  class Cell
+
+@position = [x, y]
+
+def self.count_neighbors
+  Cell.all.each |cell.position|
+  if cell.position is next to any other cell.position
+      create_cell / destroy_cell
 
 # Part 2
 
